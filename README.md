@@ -12,8 +12,8 @@ This repository contains our submission for the NourishNet Data Challenge organi
 │   ├── package.json       # Dependencies and scripts
 │   ├── README.md          # Detailed app documentation
 │   └── PROMPTS.md         # App-level prompt notes
-├── PROMPTS.md             # Prompt Pipeline (Deliverable 1)
-└── README.md              # This file (Deliverable 3)
+├── FINAL_REPORT.pdf       # Final report describing tool (Deliverable 2)
+└── README.md              # This file (Deliverable 1)
 ```
 
 ## Quick Start
