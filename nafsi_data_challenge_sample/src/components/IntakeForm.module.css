@@ -1,0 +1,152 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #1b4332;
+}
+
+.input {
+  padding: 0.65rem 0.75rem;
+  border: 2px solid #d8f3dc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #40916c;
+  box-shadow: 0 0 0 3px rgba(64, 145, 108, 0.2);
+}
+
+.input:disabled {
+  background: #f0f0f0;
+  opacity: 0.6;
+}
+
+.error {
+  color: #d32f2f;
+  font-size: 0.85rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+  cursor: pointer;
+}
+
+.checkboxLabel input {
+  width: 18px;
+  height: 18px;
+  accent-color: #40916c;
+}
+
+.radioGroup {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.radioLabel {
+  cursor: pointer;
+}
+
+.radioLabel input {
+  display: none;
+}
+
+.radioText {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 2px solid #d8f3dc;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.radioLabel input:checked + .radioText {
+  background: #40916c;
+  color: #fff;
+  border-color: #40916c;
+}
+
+.chipGroup {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.chip {
+  padding: 0.45rem 0.85rem;
+  border: 2px solid #d8f3dc;
+  border-radius: 20px;
+  background: #fff;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #333;
+}
+
+.chip:hover {
+  border-color: #40916c;
+}
+
+.chipActive {
+  background: #40916c;
+  color: #fff;
+  border-color: #40916c;
+}
+
+.submitBtn {
+  padding: 0.85rem 1.5rem;
+  background: #2d6a4f;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  min-height: 48px;
+}
+
+.submitBtn:hover:not(:disabled) {
+  background: #1b4332;
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .form {
+    padding: 1rem;
+  }
+  .radioGroup {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,35 @@
+.header {
+  background: linear-gradient(135deg, #2d6a4f, #40916c);
+  color: #fff;
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.tagline {
+  margin: 0.25rem 0 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.35rem;
+  }
+  .tagline {
+    font-size: 0.95rem;
+  }
+}
