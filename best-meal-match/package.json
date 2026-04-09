@@ -8,8 +8,11 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "vitest --run"
+    "test": "vitest --run",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
+  "homepage": "https://YOUR_GITHUB_USERNAME.github.io/nafsi_data_challenge_sample/",
   "dependencies": {
     "leaflet": "^1.9.4",
     "lucide-react": "^0.460.0",

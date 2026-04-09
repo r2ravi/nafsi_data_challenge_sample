@@ -63,8 +63,6 @@ npm run deploy
 
 This builds the project and pushes the `dist/` folder to the `gh-pages` branch.
 
-Alternatively, you can configure GitHub Actions for automatic deployment on push.
-
 ## Tech Stack
 
 - **React 18** + TypeScript

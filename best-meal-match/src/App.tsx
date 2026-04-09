@@ -136,7 +136,6 @@ export default function App() {
       try {
         const loc = formData.zipCode ? ZIP_LOOKUP[formData.zipCode] : null;
         if (!loc) {
-          // Default to DC center if zip not found
           const fallback = { lat: 38.9072, lng: -77.0369 };
           const p: HouseholdProfile = {
             location: { ...fallback, zipCode: formData.zipCode, city: formData.city },

@@ -29,34 +29,17 @@ const homeIcon = L.divIcon({
 export default function MapView({ results, homeLat, homeLng }: MapViewProps) {
   return (
     <div className={styles.mapWrapper}>
-      <MapContainer
-        center={[homeLat, homeLng]}
-        zoom={11}
-        className={styles.map}
-        scrollWheelZoom={true}
-      >
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-
+      <MapContainer center={[homeLat, homeLng]} zoom={11} className={styles.map} scrollWheelZoom={true}>
+        <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
         <Marker position={[homeLat, homeLng]} icon={homeIcon}>
           <Popup>📍 Your Location</Popup>
         </Marker>
-
         {results.map((result, i) => (
-          <Marker
-            key={result.resource.id}
-            position={[result.resource.lat, result.resource.lng]}
-            icon={createNumberedIcon(i + 1)}
-          >
+          <Marker key={result.resource.id} position={[result.resource.lat, result.resource.lng]} icon={createNumberedIcon(i + 1)}>
             <Popup>
-              <strong>{result.resource.organizationName}</strong>
-              <br />
-              {result.resource.address}
-              <br />
-              {result.distanceMiles.toFixed(1)} miles away
-              <br />
+              <strong>{result.resource.organizationName}</strong><br />
+              {result.resource.address}<br />
+              {result.distanceMiles.toFixed(1)} miles away<br />
               {result.resource.operatingHours}
             </Popup>
           </Marker>

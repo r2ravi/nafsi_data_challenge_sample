@@ -17,14 +17,11 @@ export default function ResultsPanel({ results, onBack }: ResultsPanelProps) {
           ← New Search
         </button>
       </div>
-
       {results.length === 0 ? (
         <div className={styles.empty}>
           <SearchX size={48} aria-hidden="true" />
           <p>No matches found.</p>
-          <p className={styles.suggestion}>
-            Try a different zip code or adjust your optional filters.
-          </p>
+          <p className={styles.suggestion}>Try a different zip code or adjust your optional filters.</p>
         </div>
       ) : (
         <div className={styles.list}>
