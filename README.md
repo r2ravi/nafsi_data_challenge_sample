@@ -12,8 +12,8 @@ This repository contains our submission for the NourishNet Data Challenge organi
 │   ├── package.json       # Dependencies and scripts
 │   ├── README.md          # Detailed app documentation
 │   └── PROMPTS.md         # App-level prompt notes
-├── FINAL_REPORT.pdf       # Final report describing tool (Deliverable 2)
-└── README.md              # This file (Deliverable 1)
+├── FINAL_REPORT.pdf       # Final report describing tool (Deliverable 1)
+└── README.md              # This file (Deliverable 3)
 ```
 
 ## Quick Start
@@ -89,6 +89,6 @@ The app aggregates food distribution data from 25+ public sources including Feed
 
 | # | Deliverable | Location |
 |---|-------------|----------|
-| 1 | Prompt Markdown File | [`PROMPTS.md`](./PROMPTS.md) |
+| 1 | Final Report | [`FINAL_REPORT.pdf`](./FINAL_REPORT.pdf) |
 | 2 | Final React Package | [`best-meal-match/`](./best-meal-match/) |
 | 3 | README | This file |
